@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+/*Estilos globales*/
+/*El border right de body desaparece en mobile */
+
+body {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+
+    background-color: #1f2023;
+    border-right: #2e2f36 solid 2px;
+}
+
+@media (max-width: 767px) {
+    body {
+      border-right: none;
+    }
+  }
+
+/*Estilos del scrollbar*/
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1f2023;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2e2f36;
+    border-radius: 20px;
+}
